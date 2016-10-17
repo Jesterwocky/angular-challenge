@@ -1,12 +1,56 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="angularModule">
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="./bower_components/angular/angular.js"></script>
-    <script src="./build/app.min.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="./build/master.css">
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./build/app.min.js"></script>
+    <link rel="stylesheet" href="./build/styles.css" media="screen" title="no title">
   </head>
   <body>
+    <div class="paginated-list" ng-controller="assetsController">
+      <div class="assets-list group">
+
+        <div class="asset-row group" ng-repeat="asset in assetsPage">
+
+          <div class="location-info group">
+            <p>{{asset.latitude}}, {{asset.longitude}}</p>
+            <p>{{asset.location}}</p>
+          </div>
+
+          <div class="asset-details group">
+            <p>{{asset.media}} {{asset.copy_size}}</p>
+          </div>
+
+          <div class="asset-selection group">
+            <div class="impression-cost group">
+              <p>{{asset.cpm | currency}}</p>
+              <p>Average Impressions</p>
+            </div>
+            <button class="add-button">Add</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="page-controls">
+        <div class="button-set group">
+          <button class="page-arrow-left" ng-click="prevPage()">&#9664</button>
+
+          <div class="page-buttons">
+            <button
+              ng-repeat="button in buttonList track by $index"
+              ng-click="changePage(button, $index)"
+              class="numbered-button">
+                {{button}}
+            </button>
+          </div>
+
+          <button class="page-arrow-right" ng-click="nextPage()">&#9654</button>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

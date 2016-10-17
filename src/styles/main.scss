@@ -1,0 +1,99 @@
+//clearfix
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  background: #d9d9d9;
+
+  .paginated-list {
+    width: 50%;
+    min-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.assets-list {
+  height: 75%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .asset-row {
+    background: white;
+    height: 5em;
+    box-sizing: border-box;
+    padding: 0.5em;
+    margin-top: 0.1em;
+
+    .add-button {
+      height: 90%;
+    }
+
+    .location-info, .asset-details, .asset-selection, .impression-cost {
+      height: 100%;
+      display: inline-block;
+    }
+
+    .location-info {
+      padding-right: 3em;
+      float: left;
+    }
+
+    .asset-details {
+      padding-right: 3em;
+      float:left;
+    }
+
+    .asset-selection {
+      float: right;
+      .impression-cost {
+        padding-right: 1em;
+      }
+    }
+  }
+}
+
+.page-controls {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+  button {
+    height: 2em;
+    width: 2em;
+    background: white;
+  }
+
+  .page-arrow-left {
+    margin-right: 2em;
+  }
+
+  .page-arrow-right {
+    margin-left: 2em;
+  }
+
+  .button-set {
+    button {
+      background: white;
+
+      .numbered-button {
+        margin: 0em;
+      }
+    }
+  }
+
+  .page-buttons {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+
+  input {
+    width: 3em;
+    height: 3em;
+  }
+}
