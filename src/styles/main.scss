@@ -1,10 +1,3 @@
-//clearfix
-.group:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 body {
   background: #d9d9d9;
 
@@ -13,87 +6,98 @@ body {
     min-width: 40em;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1.5em;
   }
 }
 
-.assets-list {
-  height: 75%;
+.assets-table {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0.3em;
+  padding-left: 1.3em;
+  padding-right: 0.6em;
+  border-spacing: 0 0.2em;
+
+  tr {
+    background: white;
+    margin-bottom: 0.12em;
+    border: 1em solid #d9d9d9;
+  }
+
+  td {
+  }
+
+  .add-button {
+    height: 5.5em;
+    width: 5.5em;
+    float: right;
+    color: white;
+    background: linear-gradient(160deg, #5be4f1, #21afc7);
+    text-align: center;
+  }
+
+}
+
+.assets-list {
 
   .asset-row {
     background: white;
     height: 5em;
     box-sizing: border-box;
-    padding: 0.5em;
-    margin-top: 0.1em;
+    padding: 0.3em;
+    padding-left: 0.8em;
+    padding-right: 0.6em;
+    margin-bottom: 0.12em;
 
     .add-button {
-      height: 90%;
-    }
-
-    .location-info, .asset-details, .asset-selection, .impression-cost {
       height: 100%;
-      display: inline-block;
-    }
-
-    .location-info {
-      padding-right: 3em;
-      float: left;
+      width: 5.5em;
+      float: right;
+      color: white;
+      background: linear-gradient(160deg, #5be4f1, #21afc7);
+      text-align: center;
     }
 
     .asset-details {
-      padding-right: 3em;
-      float:left;
-    }
+      color: #777777;
+      padding: 0.6em;
+      font-weight: 300;
 
-    .asset-selection {
-      float: right;
+      .small-text {
+        font-size: 0.7em;
+        padding-bottom: 0.5em;
+      }
+
+      .location-info, .asset-type, .impression-cost {
+        height: 100%;
+        display: inline-block;
+      }
+
+      .location-info {
+        margin-right: 2em;
+        float: left;
+        font-weight: 700;
+
+        .lat-long {
+          font-weight: 100;
+          padding-bottom: 0.5em;
+        }
+      }
+
+      .asset-type {
+        margin-right: 4em;
+        float:left;
+        line-height: 3.5em;
+      }
+
       .impression-cost {
-        padding-right: 1em;
+        float: right;
+        margin-right: 1em;
+        font-weight: normal;
+
+        .price {
+          font-size: 1.5em;
+        }
       }
     }
-  }
-}
-
-.page-controls {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-
-  button {
-    height: 2em;
-    width: 2em;
-    background: white;
-  }
-
-  .page-arrow-left {
-    margin-right: 2em;
-  }
-
-  .page-arrow-right {
-    margin-left: 2em;
-  }
-
-  .button-set {
-    button {
-      background: white;
-
-      .numbered-button {
-        margin: 0em;
-      }
-    }
-  }
-
-  .page-buttons {
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-  }
-
-  input {
-    width: 3em;
-    height: 3em;
   }
 }

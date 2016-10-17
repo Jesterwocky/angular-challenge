@@ -6,28 +6,51 @@
     <script src="./bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="./build/app.min.js"></script>
     <link rel="stylesheet" href="./build/styles.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
   </head>
   <body>
     <div class="paginated-list" ng-controller="assetsController">
+      <table class="assets-table">
+        <tr class="asset-row group" ng-repeat="asset in assetsPage">
+
+          <td class="location-info group">
+            <p class="lat-long small-text">{{asset.latitude}}, {{asset.longitude}}</p>
+            <p>{{asset.location}}</p>
+          </td>
+
+          <td class="asset-type group">
+            <p>{{asset.media}} {{asset.copy_size}}</p>
+          </td>
+
+          <td class="impression-cost group">
+            <p class="price">{{asset.cpm | currency}}</p>
+            <p class="small-text">Average Impressions</p>
+          </td>
+
+          <td>
+            <button class="add-button">ADD</button>
+          </td>
+        </tr>
+      </table>
+
       <div class="assets-list group">
 
         <div class="asset-row group" ng-repeat="asset in assetsPage">
-
-          <div class="location-info group">
-            <p>{{asset.latitude}}, {{asset.longitude}}</p>
-            <p>{{asset.location}}</p>
-          </div>
-
+          <button class="add-button">ADD</button>
           <div class="asset-details group">
-            <p>{{asset.media}} {{asset.copy_size}}</p>
-          </div>
-
-          <div class="asset-selection group">
-            <div class="impression-cost group">
-              <p>{{asset.cpm | currency}}</p>
-              <p>Average Impressions</p>
+            <div class="location-info group">
+              <p class="lat-long small-text">{{asset.latitude}}, {{asset.longitude}}</p>
+              <p>{{asset.location}}</p>
             </div>
-            <button class="add-button">Add</button>
+
+            <div class="asset-type group">
+              <p>{{asset.media}} {{asset.copy_size}}</p>
+            </div>
+
+            <div class="impression-cost group">
+              <p class="price">{{asset.cpm | currency}}</p>
+              <p class="small-text">Average Impressions</p>
+            </div>
           </div>
 
         </div>
@@ -35,19 +58,19 @@
       </div>
 
       <div class="page-controls">
-        <div class="button-set group">
+        <div class="button-set">
           <button class="page-arrow-left" ng-click="prevPage()">&#9664</button>
+          <button class="page-arrow-right" ng-click="nextPage()">&#9654</button>
 
-          <div class="page-buttons">
+          <div class="page-buttons group">
             <button
               ng-repeat="button in buttonList track by $index"
               ng-click="changePage(button, $index)"
-              class="numbered-button">
+              class="numbered-button" ng-class="{selected-page : button === currentPage}">
                 {{button}}
             </button>
           </div>
 
-          <button class="page-arrow-right" ng-click="nextPage()">&#9654</button>
         </div>
       </div>
     </div>

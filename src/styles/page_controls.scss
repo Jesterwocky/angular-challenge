@@ -1,0 +1,41 @@
+.page-controls {
+  margin-left: auto;
+  margin-right: auto;
+
+  .button-set {
+    background: white;
+    padding: 0.5em;
+
+    button {
+      background: white;
+      height: 2em;
+      width: 1.6em;
+      box-sizing: border-box;
+      color: #21afc7;
+      border: 1px solid #21afc7;
+      text-align: center;
+    }
+
+    .page-arrow-left {
+      float: left;
+    }
+
+    .page-arrow-right {
+      float: right;
+    }
+
+    .page-buttons {
+      margin-left: auto;
+      text-align: center;
+      margin-right: auto;
+
+      .numbered-button {
+        margin-right: 0.2em;
+      }
+      .selected-button {
+        background: #21afc7;
+        color: white;
+      }
+    }
+  }
+}
