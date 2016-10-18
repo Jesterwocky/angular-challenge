@@ -6,42 +6,15 @@ body {
     min-width: 40em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1.5em;
+    margin-top: 1.7em;
   }
-}
-
-.assets-table {
-  width: 100%;
-  padding: 0.3em;
-  padding-left: 1.3em;
-  padding-right: 0.6em;
-  border-spacing: 0 0.2em;
-
-  tr {
-    background: white;
-    margin-bottom: 0.12em;
-    border: 1em solid #d9d9d9;
-  }
-
-  td {
-  }
-
-  .add-button {
-    height: 5.5em;
-    width: 5.5em;
-    float: right;
-    color: white;
-    background: linear-gradient(160deg, #5be4f1, #21afc7);
-    text-align: center;
-  }
-
 }
 
 .assets-list {
 
   .asset-row {
     background: white;
-    height: 5em;
+    height: 5.6em;
     box-sizing: border-box;
     padding: 0.3em;
     padding-left: 0.8em;
@@ -55,15 +28,20 @@ body {
       color: white;
       background: linear-gradient(160deg, #5be4f1, #21afc7);
       text-align: center;
+
+      &:hover {
+        background: linear-gradient(200deg, #21afc7, #5be4f1);
+      }
     }
 
     .asset-details {
       color: #777777;
-      padding: 0.6em;
-      font-weight: 300;
+      padding: 0.7em;
+      height: 95%;
 
       .small-text {
         font-size: 0.7em;
+        color: #9c9c9c;
         padding-bottom: 0.5em;
       }
 
@@ -73,29 +51,34 @@ body {
       }
 
       .location-info {
-        margin-right: 2em;
+        margin-right: 1.3em;
         float: left;
-        font-weight: 700;
+        font-weight: 400;
+        width: 25%;
 
         .lat-long {
-          font-weight: 100;
+          font-weight: 400;
           padding-bottom: 0.5em;
         }
       }
 
       .asset-type {
+        color: #909ea0;
+        font-weight: 100;
         margin-right: 4em;
         float:left;
-        line-height: 3.5em;
+        line-height: 3.8em;
       }
 
       .impression-cost {
+        font-weight: 300;
         float: right;
-        margin-right: 1em;
-        font-weight: normal;
+        margin-right: 1.5em;
+        margin-top: 0.5em;
 
         .price {
-          font-size: 1.5em;
+          font-size: 1.3em;
+          color: #21afc7;
         }
       }
     }

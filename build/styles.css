@@ -7,35 +7,12 @@ body .paginated-list {
   min-width: 40em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.5em;
-}
-
-.assets-table {
-  width: 100%;
-  padding: 0.3em;
-  padding-left: 1.3em;
-  padding-right: 0.6em;
-  border-spacing: 0 0.2em;
-}
-
-.assets-table tr {
-  background: white;
-  margin-bottom: 0.12em;
-  border: 1em solid #d9d9d9;
-}
-
-.assets-table .add-button {
-  height: 5.5em;
-  width: 5.5em;
-  float: right;
-  color: white;
-  background: linear-gradient(160deg, #5be4f1, #21afc7);
-  text-align: center;
+  margin-top: 1.7em;
 }
 
 .assets-list .asset-row {
   background: white;
-  height: 5em;
+  height: 5.6em;
   box-sizing: border-box;
   padding: 0.3em;
   padding-left: 0.8em;
@@ -52,14 +29,19 @@ body .paginated-list {
   text-align: center;
 }
 
+.assets-list .asset-row .add-button:hover {
+  background: linear-gradient(200deg, #21afc7, #5be4f1);
+}
+
 .assets-list .asset-row .asset-details {
   color: #777777;
-  padding: 0.6em;
-  font-weight: 300;
+  padding: 0.7em;
+  height: 95%;
 }
 
 .assets-list .asset-row .asset-details .small-text {
   font-size: 0.7em;
+  color: #9c9c9c;
   padding-bottom: 0.5em;
 }
 
@@ -71,30 +53,35 @@ body .paginated-list {
 }
 
 .assets-list .asset-row .asset-details .location-info {
-  margin-right: 2em;
+  margin-right: 1.3em;
   float: left;
-  font-weight: 700;
+  font-weight: 400;
+  width: 25%;
 }
 
 .assets-list .asset-row .asset-details .location-info .lat-long {
-  font-weight: 100;
+  font-weight: 400;
   padding-bottom: 0.5em;
 }
 
 .assets-list .asset-row .asset-details .asset-type {
+  color: #909ea0;
+  font-weight: 100;
   margin-right: 4em;
   float: left;
-  line-height: 3.5em;
+  line-height: 3.8em;
 }
 
 .assets-list .asset-row .asset-details .impression-cost {
+  font-weight: 300;
   float: right;
-  margin-right: 1em;
-  font-weight: normal;
+  margin-right: 1.5em;
+  margin-top: 0.5em;
 }
 
 .assets-list .asset-row .asset-details .impression-cost .price {
-  font-size: 1.5em;
+  font-size: 1.3em;
+  color: #21afc7;
 }
 .page-controls {
   margin-left: auto;
@@ -103,17 +90,25 @@ body .paginated-list {
 
 .page-controls .button-set {
   background: white;
-  padding: 0.5em;
+  padding: 0.75em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .page-controls .button-set button {
+  font-size: 1.1em;
   background: white;
-  height: 2em;
-  width: 1.6em;
+  height: 2.05em;
+  width: 1.8em;
   box-sizing: border-box;
   color: #21afc7;
   border: 1px solid #21afc7;
   text-align: center;
+}
+
+.page-controls .button-set button:hover {
+  background: #21afc7;
+  color: white;
 }
 
 .page-controls .button-set .page-arrow-left {
@@ -124,6 +119,18 @@ body .paginated-list {
   float: right;
 }
 
+.page-controls .button-set .disabled-arrow {
+  color: #c7c3c3;
+  border-color: #c7c3c3;
+  cursor: default;
+}
+
+.page-controls .button-set .disabled-arrow:hover {
+  color: #c7c3c3;
+  border-color: #c7c3c3;
+  background: white;
+}
+
 .page-controls .button-set .page-buttons {
   margin-left: auto;
   text-align: center;
@@ -131,10 +138,10 @@ body .paginated-list {
 }
 
 .page-controls .button-set .page-buttons .numbered-button {
-  margin-right: 0.2em;
+  margin-right: 0.12em;
 }
 
-.page-controls .button-set .page-buttons .selected-button {
+.page-controls .button-set .page-buttons .selected-page {
   background: #21afc7;
   color: white;
 }
@@ -177,8 +184,9 @@ button {
   text-align: inherit;
   vertical-align: inherit;
   box-sizing: inherit;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-size: inherit;
+  overflow: hidden;
 }
 
 ul {

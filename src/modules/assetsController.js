@@ -18,26 +18,26 @@ angularApp.controller("assetsController", function($scope, pageService) {
       {
         "latitude": 11.99,
         "longitude": 99.11,
-        "location": "501 Privet Dr",
+        "location": "NW 34 14th St",
         "media": "Billboard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
+      },
+      {
+        "latitude": 11.99,
+        "longitude": 99.11,
+        "location": "501 Privet Dr",
+        "media": "Subway Wall",
+        "copy_size": "50X40",
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
         "longitude": 99.11,
         "location": "22 Broadway",
-        "media": "Subway Wall",
-        "copy_size": "50X40",
-        "cpm": 3.555444
-      },
-      {
-        "latitude": 11.99,
-        "longitude": 99.11,
-        "location": "88 3rd Ave",
         "media": "SmartBoard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -45,7 +45,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "111 23rd St",
         "media": "Billboard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -53,7 +53,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "907 East Blvd",
         "media": "Subway Wall",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -61,7 +61,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "56 7th Ave",
         "media": "SmartBoard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -69,7 +69,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "45 MLK Blvd",
         "media": "Billboard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -77,7 +77,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "391 20th Ave",
         "media": "Subway Wall",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -85,7 +85,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "123 Sesame St",
         "media": "SmartBoard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -93,7 +93,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "322 Broadchurch Lane",
         "media": "Billboard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -101,7 +101,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "31 Agony Place",
         "media": "Subway Wall",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -109,7 +109,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "212 Timid Deer Path",
         "media": "SmartBoard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -117,7 +117,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "702 Hobbiton Lane",
         "media": "Billboard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -125,7 +125,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "61 Vanilla Expressway",
         "media": "Subway Wall",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -133,7 +133,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "426 Greenwich Plaza",
         "media": "SmartBoard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -141,7 +141,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "601 Nightly Place",
         "media": "Billboard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -149,7 +149,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "45 St Anne's Blvd",
         "media": "Billboard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -157,7 +157,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "802 Yahtzee Road",
         "media": "Billboard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -165,7 +165,7 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "1852 East 18th St",
         "media": "Billboard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       },
       {
         "latitude": 11.99,
@@ -173,16 +173,17 @@ angularApp.controller("assetsController", function($scope, pageService) {
         "location": "205 5th Ave",
         "media": "Billboard",
         "copy_size": "50X40",
-        "cpm": 3.555444
+        "cpm": 3.9511111111
       }
     ]
   };
 
   $scope.currentPage = 1;
   let pages = pageService.allPages(dummyAssets.assets, 2);
-  console.log(pages);
+  $scope.totalPages = pages.length;
   $scope.assetsPage = pages[$scope.currentPage - 1];
   $scope.buttonList = pageService.centerPageRange(pages.length, $scope.currentPage);
+  console.log();
 
   $scope.changePage = function(pageNumber, index) {
     if (pageNumber === "...") {
