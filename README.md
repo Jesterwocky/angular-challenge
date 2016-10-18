@@ -8,7 +8,6 @@ This is a sample Angular app that uses:
 
 It displays the locations, types, and prices of assets described in a JSON object. Results are paginated using custom logic in a ```pageService``` Angular module.
 
-
 ![app_screenshot]
 
 Tested only in Chrome.
@@ -17,6 +16,6 @@ Tested only in Chrome.
 
 0. Download the repo.
 0. Run ```npm install``` and ```bower install```.
-0. Open index.html or run the ```gulp``` command (BrowserSync will open a Chrome window).
+0. Open index.html or run the ```gulp``` command (BrowserSync will open a browser window).
 
 [app_screenshot]: app_screenshot.png
