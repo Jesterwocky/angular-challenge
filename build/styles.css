@@ -4,11 +4,11 @@ body {
 }
 
 body .paginated-list {
-  width: 65%;
+  width: 60%;
   min-width: 35em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.7em;
+  margin-top: 1.2em;
 }
 
 .assets-list .asset-row {
@@ -63,6 +63,7 @@ body .paginated-list {
 .assets-list .asset-row .asset-details .location-info .lat-long {
   font-weight: 400;
   padding-bottom: 0.4em;
+  white-space: nowrap;
 }
 
 .assets-list .asset-row .asset-details .asset-type {
@@ -71,7 +72,7 @@ body .paginated-list {
   font-weight: 100;
   margin-right: 4em;
   float: left;
-  line-height: 3.8em;
+  line-height: 3.6em;
 }
 
 .assets-list .asset-row .asset-details .impression-cost {
