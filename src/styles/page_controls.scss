@@ -19,7 +19,7 @@
       text-align: center;
 
       &:hover {
-        background: #21afc7;
+        background: #c3e3e8;
         color: white;
       }
     }
@@ -30,7 +30,11 @@
 
     .page-arrow-right {
       float: right;
+    }
 
+    .page-arrow-left:hover, .page-arrow-right:hover {
+      background: #21afc7;
+      color: white;
     }
 
     .disabled-arrow {
@@ -52,6 +56,10 @@
 
       .numbered-button {
         margin-right: 0.12em;
+
+        &:last-child {
+          margin-right: 0em;
+        }
       }
 
       .selected-page {

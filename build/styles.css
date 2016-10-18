@@ -109,7 +109,7 @@ body .paginated-list {
 }
 
 .page-controls .button-set button:hover {
-  background: #21afc7;
+  background: #c3e3e8;
   color: white;
 }
 
@@ -119,6 +119,12 @@ body .paginated-list {
 
 .page-controls .button-set .page-arrow-right {
   float: right;
+}
+
+.page-controls .button-set .page-arrow-left:hover,
+.page-controls .button-set .page-arrow-right:hover {
+  background: #21afc7;
+  color: white;
 }
 
 .page-controls .button-set .disabled-arrow {
@@ -141,6 +147,10 @@ body .paginated-list {
 
 .page-controls .button-set .page-buttons .numbered-button {
   margin-right: 0.12em;
+}
+
+.page-controls .button-set .page-buttons .numbered-button:last-child {
+  margin-right: 0em;
 }
 
 .page-controls .button-set .page-buttons .selected-page {

@@ -19,7 +19,9 @@
           <button class="add-button">ADD</button>
           <div class="asset-details group">
             <div class="location-info group">
-              <p class="lat-long small-text">{{asset.latitude}}, {{asset.longitude}}</p>
+              <p class="lat-long small-text">
+                {{asset.latitude | number:6}}, {{asset.longitude | number:6}}
+              </p>
               <p>{{asset.location}}</p>
             </div>
 
