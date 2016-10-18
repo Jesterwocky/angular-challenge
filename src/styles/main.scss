@@ -1,9 +1,10 @@
 body {
   background: #d9d9d9;
+  clear:both;
 
   .paginated-list {
-    width: 50%;
-    min-width: 40em;
+    width: 65%;
+    min-width: 35em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1.7em;
@@ -17,8 +18,8 @@ body {
     height: 5.6em;
     box-sizing: border-box;
     padding: 0.3em;
-    padding-left: 0.8em;
-    padding-right: 0.6em;
+    padding-left: 1.6em;
+    padding-right: 0.8em;
     margin-bottom: 0.12em;
 
     .add-button {
@@ -30,19 +31,19 @@ body {
       text-align: center;
 
       &:hover {
-        background: linear-gradient(200deg, #21afc7, #5be4f1);
+        background: radial-gradient(#5be4f1, #21afc7);
       }
     }
 
     .asset-details {
       color: #777777;
-      padding: 0.7em;
       height: 95%;
+      box-sizing: border-box;
+      padding-top: 0.9em;
 
       .small-text {
         font-size: 0.7em;
         color: #9c9c9c;
-        padding-bottom: 0.5em;
       }
 
       .location-info, .asset-type, .impression-cost {
@@ -58,12 +59,13 @@ body {
 
         .lat-long {
           font-weight: 400;
-          padding-bottom: 0.5em;
+          padding-bottom: 0.4em;
         }
       }
 
       .asset-type {
         color: #909ea0;
+        font-size: 0.9em;
         font-weight: 100;
         margin-right: 4em;
         float:left;
@@ -74,10 +76,10 @@ body {
         font-weight: 300;
         float: right;
         margin-right: 1.5em;
-        margin-top: 0.5em;
+        margin-top: 0.2em;
 
         .price {
-          font-size: 1.3em;
+          font-size: 1.4em;
           color: #21afc7;
         }
       }
