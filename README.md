@@ -13,7 +13,7 @@ Tested only in Chrome.
 
 ## See it In Action
 
-This app has been minified into the build/app.min.js. Styles are concatenated in build/styles.css. To view the app in-browser, just:
+This app has been minified into build/app.min.js. Styles are concatenated in build/styles.css. To view the app in-browser, just:
 
 0. Download the repo.
 0. Open index.html.

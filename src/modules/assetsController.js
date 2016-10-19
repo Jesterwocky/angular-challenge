@@ -1,4 +1,4 @@
-angularApp.controller("assetsController", function($scope, pageService, assetService) {
+angularApp.controller("assetsController", function($scope, $http, pageService, assetService) {
   // const address = "http://ec2-52-86-89-220.compute-1.amazonaws.com/api/assets/search";
   // const payload = {
   //   "location":{"lat":40.7127837,"lon":-74.00594130000002,"radius":"5mi"},
